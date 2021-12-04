@@ -22,14 +22,29 @@ body {
   width: 400px;
   max-width: 100%;
   overflow: hidden;
+  padding-bottom: 1rem;
 }
 
 .header {
   background-color: #f7f7f7;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .header h2 {
   margin: 0;
-  font-style: inherit;
+}
+
+.form-control {
+  margin: 1rem 2rem;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
 }
