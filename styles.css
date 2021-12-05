@@ -57,6 +57,11 @@ body {
   border: 2px solid #f0f0f0;
 }
 
+.form-control input:focus {
+  outline: none;
+  border: 2px solid #d4e4f7;
+}
+
 .form-control.success input {
   border-color: #2ecc71;
 }
@@ -102,4 +107,8 @@ button {
   width: 100%;
   font-size: 1rem;
   padding: 0.65rem 0.5rem;
+}
+
+button:hover {
+  background-color: #236ab9;
 }
