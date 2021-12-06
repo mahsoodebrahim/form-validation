@@ -42,10 +42,16 @@
         </div>
         <div class="form-control">
           <label>Password</label>
-          <input type="password" id="password" placeholder="blah" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$"
+            required
+          />
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
-          <small>Passwords don't match</small>
+          <small>Invalid Password</small>
         </div>
         <div class="form-control">
           <label>Confirm Password</label>

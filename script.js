@@ -43,10 +43,10 @@ password.addEventListener("blur", (e) => {
   }
 });
 
-// email.addEventListener("blur", (e) => {
-//   if (email.validity.valid) {
-//     email.parentElement.classList.add("success");
-//   } else if (email.value.length > 0) {
-//     email.parentElement.classList.add("error");
-//   }
-// });
+passwordCheck.addEventListener("blur", (e) => {
+  if (password.validity.valid && passwordCheck.value == password.value) {
+    passwordCheck.parentElement.classList.add("success");
+  } else if (passwordCheck.value.length > 0) {
+    passwordCheck.parentElement.classList.add("error");
+  }
+});
