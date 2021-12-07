@@ -28,3 +28,13 @@ formElements.forEach((formElement) => {
     }
   });
 });
+
+form.addEventListener("submit", (event) => {
+  if (!form.checkValidity()) {
+    console.log("here");
+    event.preventDefault();
+    formElements.forEach((formElement) => {
+      formElement.parentElement.classList.add("error");
+    });
+  }
+});
