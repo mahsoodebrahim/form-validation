@@ -34,7 +34,9 @@ form.addEventListener("submit", (event) => {
     console.log("here");
     event.preventDefault();
     formElements.forEach((formElement) => {
-      formElement.parentElement.classList.add("error");
+      if (!formElement.validity.valid) {
+        formElement.parentElement.classList.add("error");
+      }
     });
   }
 });
